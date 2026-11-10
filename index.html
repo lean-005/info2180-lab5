@@ -3,16 +3,14 @@
 	<head>
         <meta charset="utf-8">
 		<title>World Database Lookup</title>
-
-		<!-- you can modify this as needed or to your preference -->
 		<link href="world.css" type="text/css" rel="stylesheet" />
-
 		<!-- you write this -->
 		<script src="world.js" type="text/javascript"></script>
 	</head>
 
 	<body>
 		<header>
+			<img src="globe1.jpg" alt="World globe logo">
 			<h1>World Database Lookup</h1>
 		</header>
 
@@ -20,13 +18,14 @@
 			<div id="controls">
 				<label for="country">Country:</label>
 				<input id="country" type="search" name="country" placeholder="Enter country name" />
-				<button id="lookup">Lookup</button>
+				<div class="buttons">
+					<button id="lookup">Lookup</button>
+					<button id="citieslookup">Lookup Cities</button>
+				</div>
 			</div>
-			
-			<div id="result">
+			<div id="result"></div>
+			<div id="citiesresult"></div>
 				<!-- countries will appear here -->
-			</div>
 		</main>
-
 	</body>
 </html>
